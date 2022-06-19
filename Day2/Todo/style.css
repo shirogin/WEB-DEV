@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	display: flex;
+	min-height: 100vh;
+	min-width: 100vw;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	background-color: #a9c9ff;
+	background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+#Todo {
+	display: flex;
+	flex-direction: column;
+	min-width: 600px;
+}
+#Todo * {
+	font-weight: bold;
+}
+#header {
+	display: flex;
+	flex-wrap: wrap;
+}
+#header div {
+	background-color: #ffbbec;
+	display: flex;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	align-items: center;
+}
+#header button {
+	margin-left: auto;
+	background-color: transparent;
+	border: none;
+	font-size: 3rem;
+}
+#header input {
+	width: 100%;
+	outline: none;
+	padding: 1rem;
+	border: 0.4rem solid #ffbbec;
+	font-size: 1.2rem;
+}
+#header input.hide {
+	display: none;
+}
+#header h1 {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+ul .element {
+	list-style: none;
+	background-color: white;
+	padding: 0;
+	display: flex;
+}
+ul .element p.done {
+	text-decoration: line-through;
+}
+ul .element p {
+	padding: 0.7rem;
+	font-size: 1.2rem;
+	width: 100%;
+}
+ul .element span {
+	overflow: hidden;
+	background-color: #ffbbec;
+	width: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	opacity: 0;
+	transition: width 400ms ease-in, opacity 400ms ease-in;
+}
+ul .element:hover span {
+	width: 4rem;
+	opacity: 1;
+}
+
+ul .element:nth-child(even) {
+	background-color: #fce1f4;
+}

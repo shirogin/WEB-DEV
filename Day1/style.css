@@ -1,0 +1,32 @@
+ol li {
+    color: darkgreen;
+}
+ol li:nth-child(2) {
+    color: darkorange;
+}
+ol li:last-child {
+    font-size: 20px;
+}
+
+ol li:first-child {
+    font-size: 10px;
+}
+ol li:hover {
+    color: blue;
+    cursor: pointer;
+}
+a {
+    color: black;
+}
+a:visited {
+    color: orange;
+}
+button:hover {
+    background-color: red;
+}
+input:focus {
+    background-color: darkgoldenrod;
+}
+div:focus-within {
+    background-color: darkcyan;
+}

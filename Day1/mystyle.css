@@ -1,0 +1,39 @@
+h1,
+h3 {
+    color: blueviolet;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    color: chartreuse;
+}
+img {
+    width: 400px;
+    height: 200px;
+}
+* {
+    color: brown;
+}
+
+.a {
+    text-transform: uppercase;
+}
+
+#myFav {
+    width: 200px;
+}
+div p {
+    color: cornflowerblue;
+}
+p > span {
+    color: yellow !important;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+}
